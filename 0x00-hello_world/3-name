@@ -1,2 +1,4 @@
 #!/bin/bash
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 $CFILE -o "${CFILE%.c}.s"
+CFILE="$1"
+NAME="${CFILE%.*}"
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 "${CFILE}" -o "${NAME}.s"
