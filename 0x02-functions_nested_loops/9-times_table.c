@@ -6,7 +6,6 @@
  */
 
 void times_table(void)
-
 {
 
 	int x, y, z, u, d;
@@ -16,6 +15,7 @@ void times_table(void)
 		for (y = 0; y <= 9; y++)
 		{
 			z = x * y;
+
 			if (z > 9)
 			{
 				u = z % 10;
@@ -37,5 +37,5 @@ void times_table(void)
 			}
 		}
 		_putchar('\n');
-	}
+}
 }
